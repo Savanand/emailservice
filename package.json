@@ -1,0 +1,21 @@
+{
+  "name": "Email-App",
+  "version": "1.0.0",
+  "description":"Email service application",
+  "author":"Aniket Savanand<aniketpsavanand@gmail.com>",
+  "dependencies":
+  {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "http-proxy": "1.15.1",
+    "mailgun":"0.5.0",
+    "mongojs":"2.4.0",
+    "request":"2.75.0",
+    "sendgrid":"4.5.0",
+    "sendgrid-rest":"2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savanand/emailservice"
+  }
+}
