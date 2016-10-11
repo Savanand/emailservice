@@ -177,5 +177,6 @@ server.on('upgrade', function(req, socket, head) {
   });
 });
 
-server.listen(4000);
-console.log("Load-balancer server listening on 4000");
+var port = Number(process.env.PORT || 4000);
+server.listen(port);
+console.log("Load-balancer server listening on" + port);

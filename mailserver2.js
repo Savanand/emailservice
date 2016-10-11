@@ -53,5 +53,9 @@ app.post('/',function(req,res) {
 
 });
 
-console.log("Mailserver2/Mailgun running on 8002");
-app.listen(8002);
+var port = Number(process.env.PORT || 8002);
+app.listen(port);
+console.log("Mailserver2/Mailgun server listening on" + port);
+
+//console.log("Mailserver2/Mailgun running on 8002");
+//app.listen(8002);

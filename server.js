@@ -58,5 +58,9 @@ app.delete('/emaillist/:id', function(req, res){
 	 });
 });
 
-app.listen(3000);
-console.log("server running on port 3000");
+var port = Number(process.env.PORT || 3000);
+app.listen(port);
+console.log("server listening on" + port);
+
+//app.listen(3000);
+//console.log("server running on port 3000");

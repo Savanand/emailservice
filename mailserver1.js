@@ -72,7 +72,8 @@ app.post('/',function(req,res) {
 	});
 });
 
-
-console.log("Mailserver1/Sendgrid running on 8001");
-
-app.listen(8001);
+var port = Number(process.env.PORT || 8001);
+app.listen(port);
+console.log("Load-balancer server listening on" + port);
+//console.log("Mailserver1/Sendgrid running on 8001");
+//app.listen(8001);
