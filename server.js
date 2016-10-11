@@ -3,7 +3,8 @@ var express = require('express');
 var app = express();
 
 var mongojs = require('mongojs');
- var db = mongojs('emaillist', ['emaillist']);
+// var db = mongojs('emaillist', ['emaillist']);
+ var db = mongojs('mongodb://aniket:123@ds033036.mlab.com:33036/emaillist', ['emaillist']);
 var bodyParser = require('body-parser');
 
 var loadBalancer = 'http://localhost:4000';
