@@ -39,7 +39,7 @@ app.post('/',function(req,res) {
   //console.log("req object values in mailgun="+ req.body.formData.sender); 
 
   //console.log("req object values in mailgun="+ req.param.sender);
- 	var mg = new Mailgun('key-6eff749e7ba10f3bf73db2612dc9368a');
+ 	var mg = new Mailgun('key');// removed key due to security concerns
 	mg.sendText(req.body.sender, [req.body.receiver], req.body.subject, req.body.content, 'noreply@example.com', {},
   	
   	function(err) {
